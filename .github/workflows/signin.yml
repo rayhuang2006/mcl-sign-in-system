@@ -22,10 +22,10 @@ jobs:
       
         username="${{ secrets.username }}"
         password="${{ secrets.password }}"
-        otpauth="${{ secrets.otpauth }}"
+        # otpauth="${{ secrets.otpauth }}"
         
         docker run wuchunchen/mcl-sign-in-system:latest\
           --inorout signin \
           --username "$username" \
           --password "$password" \
-          --otpauth "$otpauth" \
+          # --otpauth "$otpauth" \
